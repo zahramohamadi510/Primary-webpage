@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
+
+        }
+        h1{
+            text-align: center;
+        }
+        input[type="text"],input[type="email"], textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"]{
+            margin-right: 10px;
+        }
+        button{
+            background-color: sandybrown;
+            color: violet;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover{
+            background-color: #45a049;
+
+        }
+
+        header{
+            background: burlywood;
+            color: black;
+            padding: 1rem;
+            text-align: center;
+        }
+        .contact {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1> Contact Me</h1>
+        <nav></nav>
+    </header>
+    <section class="contact">
+        <p>
+            If you'd like to get in touch with us, please fill out the form below.
+        </p>
+        <form>
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Please Enter your full name"> <br>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="Please Enter your email"> <br>
+            <label for="number">Number</label> <br>
+            <input type="text" id="text" name="text" placeholder="Please add your phone number"> <br>
+            <input type="submit" value="Submit"> <br> <br>
+            <label for="message">Message</label>
+            <label>Gender: </label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Famale: </label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <br>
+            <label>Please Choose Your Native Language: </label><br>
+            <input type="checkbox" id="Dari" name="language" value="Dari">
+            <label for="Dari">Dari</label><br>
+            <input type="checkbox" id="Pashto" name="language" value="Pashto">
+            <label for="Pashto">Pashto</label><br>
+            <input type="checkbox" id="English" name="language" value="English">
+            <label for="English">English</label><br> <br>
+            <textarea name="message" id="message" name="message" cols="30" rows="3">You can write your required </textarea> <br>
+            <input type="submit" value="Submit"><br>
+
+
+
+        </form>
+    </div>
+
+    </section>
+    
+</body>
+</html>
